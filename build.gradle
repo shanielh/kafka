@@ -181,7 +181,7 @@ subprojects {
   }
 
   tasks.withType(ScalaCompile) {
-    scalaCompileOptions.useAnt = false
+    //scalaCompileOptions.useAnt = false
 
     configure(scalaCompileOptions.forkOptions) {
       memoryMaximumSize = '1g'
@@ -271,7 +271,7 @@ project(':core') {
     testCompile "$easymock"
     testCompile 'org.objenesis:objenesis:1.2'
     testCompile 'org.bouncycastle:bcpkix-jdk15on:1.52'
-    testCompile "org.scalatest:scalatest_$baseScalaVersion:2.2.5"
+    testCompile "org.scalatest:scalatest_$baseScalaVersion:3.0.1"
     testCompile project(':clients')
     testCompile project(':clients').sourceSets.test.output
     testCompile 'org.apache.hadoop:hadoop-minikdc:2.7.1'
