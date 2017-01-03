@@ -11,5 +11,5 @@ matrix:
   - jdk: oraclejdk7
     scala: 2.12.1
 install: 
-  gradle test 
+  gradle test -x rat
 
