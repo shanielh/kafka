@@ -4,5 +4,5 @@ jdk:
 scala:
   - 2.12.1
 install: 
-  gradle test_core_2_12_1
+  ./gradlew test_core_2_12_1
 
